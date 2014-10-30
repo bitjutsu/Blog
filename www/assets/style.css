@@ -1,0 +1,210 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald|Open+Sans:400italic,400);
+
+/* html5doctor.com Reset v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/) - http://cssreset.com */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+/* End CSS reset */
+
+@font-face {
+    font-family: 'Liberation Mono';
+    font-style: regular;
+    src: url(fonts/LiberationMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Liberation Mono';
+    font-style: italic;
+    src: url(fonts/LiberationMono-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'Liberation Mono';
+    font-style: oblique;
+    src: url(fonts/LiberationMono-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Coffee';
+    font-style: regular;
+    src: url(fonts/Coffee.woff);
+}
+
+html {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: rgb(70, 70, 70);
+    min-height: 100%;
+
+    margin-bottom: -6px;
+}
+
+body {
+    line-height: 120%;
+    max-width: 650px;
+    min-height: 100%;
+
+    /* Force scrollbar to show to prevent awkward left-right shifting */
+    overflow-y: scroll;
+
+    left: 0;
+    right: 0;
+    margin: 0 auto 0 auto;
+
+    background-color: gainsboro;
+}
+
+header {
+    padding: 15px 15px 0 15px;
+}
+
+main {
+    padding: 15px 15px 0 15px;
+}
+
+footer {
+    padding: 0 15px 20px 15px;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    color: black;
+    font-family: 'Oswald';
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+h1 { font-size: 50px; }
+
+main h1 {
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+main h2 {
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+span.subtitle {
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 15px;
+
+    line-height: 120%;
+
+    display: block;
+}
+
+li {
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+
+footer {
+    height: 14px;
+
+    text-align: center;
+    font-size: 14px;
+
+    color: grey;
+
+    /* Prevent text selection for fun: */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    cursor: default;
+}
+
+span.pageNav {
+    padding: 0 15px 10px 15px;
+    display: block;
+    height: 14px;
+
+    text-align: center;
+    font-size: 14px;
+
+    color: grey;
+}
+
+.icon-coffee {
+    font-family: 'Coffee';
+    padding-left: 1px;
+    font-size: 15px;
+}
+
+.icon-coffee::before {
+    content: '\e801';
+}
+
+a {
+    text-decoration: none;
+}
+
+#face {
+    /* From http://davidwalsh.name/css-circles */
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#title {
+    height: 75px;
+    line-height: 75px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Inline code blocks */
+:not(pre) > code {
+    background-color: rgba(0,0,0,0.05);
+    font-family: 'Liberation Mono';
+    font-size: 75%;
+    border-radius: 5px;
+    padding: 2px;
+    vertical-align: middle;
+}
+
+/* Background for code blocks: */
+div.highlight {
+    margin-top: 15px;
+}
+
+div.highlight pre {
+    display: block;
+    padding: 10px;
+    font-size: 12px;
+    background-color: rgba(0,0,0,0.05);
+
+    border-radius: 5px;
+    font-family: 'Liberation Mono';
+}
+
+header a:visited,
+header a:link,
+header a:hover,
+header a:active {
+    color: black;
+}

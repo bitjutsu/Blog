@@ -1,0 +1,12 @@
+<?php
+
+require dirname(__FILE__).'/../models/Post.php';
+
+$post = Post::find($id);
+
+if (is_null($post) || empty((array) $post)) {
+    echo 'not found!';
+} else {
+    echo "<h1>{$post->title}</h1>";
+    echo $post->body;
+}
