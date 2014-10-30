@@ -36,6 +36,7 @@ server {
 
     # Handle any other URI
     location / {
-        try_files $uri $uri/ =404;
+        # All other uris redirect to index.php internally.
+        try_files $uri /index.php;
     }
 }
